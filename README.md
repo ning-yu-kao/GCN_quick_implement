@@ -135,6 +135,8 @@ Please follow the instruction below to set up your environment.
         wandb.login(anonymous="must", key='Your Key')
         print("Successfully Logged In!")
         ```
+        
+     You guys can view my output dashboard of a sigle run at this [link](https://medium.com/r/?url=https%3A%2F%2Fwandb.ai%2Fkaoningyu%2Fgcn-ppi%2Freports%2FUntitled-Report--VmlldzoyMDIyNDgw%3FaccessToken%3D0fgywscyq72iiivoyiq1lunofjhvkdqbejovoug456owxpjkax4ize40ug7wtwtr).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
