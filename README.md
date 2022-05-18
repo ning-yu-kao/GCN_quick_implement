@@ -9,7 +9,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ning-yu-kao)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaoningyupage/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kaoningyu@gmail.com)
-[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)]()
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@kaoningyu/introduction-of-graph-convolutional-network-gcn-quick-implementation-5dd75e75b261)
 
 
 
@@ -25,7 +25,7 @@ disease diagnostics and therapeutics, yet prediction of tissue-specific cellular
 challenge for biomedicine. However, the interactions between proteins was not only a sigle connection. The protein-protein interaction (PPI) between proteins are influcing each other as a network called PPI network. Thus, advance technology was needed to discover the information in these complex structures. This project is a quick inplementaion of Graph Convolutional Network using the PPI dataset.</p>
 </div>
 
-
+***If you need information about GCN, please check out my Medium article about introduction to GCN through the Medium badge on the top***
 
 <!-- TABLE OF CONTENTS -->
 <details open>
@@ -136,8 +136,8 @@ Please follow the instruction below to set up your environment.
         print("Successfully Logged In!")
         ```
         
-     You guys can view my output dashboard of a sigle run at this [link](https://medium.com/r/?url=https%3A%2F%2Fwandb.ai%2Fkaoningyu%2Fgcn-ppi%2Freports%2FUntitled-Report--VmlldzoyMDIyNDgw%3FaccessToken%3D0fgywscyq72iiivoyiq1lunofjhvkdqbejovoug456owxpjkax4ize40ug7wtwtr).
-
+     You guys can view my output dashboard of a sigle run at this [link](https://wandb.ai/kaoningyu/gcn-ppi/reports/Predict-PPI-network-using-GCN--VmlldzoyMDIyNDgw?accessToken=0fgywscyq72iiivoyiq1lunofjhvkdqbejovoug456owxpjkax4ize40ug7wtwtr).
+     
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
