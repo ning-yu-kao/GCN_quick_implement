@@ -87,32 +87,56 @@ Please follow the instruction below to set up your environment.
     
     You can just use `pip` or `conda` to install PyG. However, I would higly recommend installing with `conda`.(So many errors occur when I using `pip`)
     
-    1. Visit to install PyTorch first
+    1. Visit [PyTorch website](https://pytorch.org/get-started/locally/) to install PyTorch first
     
-    ```bash
-    pip install pystan==2.19.1.1
-    pip install prophet
-    ```
-     
-    For more installation detail, please check out [PROPHET](https://facebook.github.io/prophet/docs/installation.html#installation-in-python) official website.
+        Select your OS/PyTorch/CUDA combination and install, for me it's:
+
+
+        ```bash
+        conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+        ```
+      
+    2. Install PyG
+        ```bash
+        conda install pyg -c pyg
+        ```
+        
+    3. Check installation
+        To check if you install PyG successfully, run this code:
+        
+        ```python
+        import torch
+        import torch_geometric.transforms as T
+        from torch_geometric.datasets import PPI
+        from torch_geometric.loader import DataLoader
+        from torch_geometric.nn import GCN2Conv
+        ```
+    For more installation detail, please check out [PyG](https://github.com/pyg-team/pytorch_geometric) official GitHub repository.
+
+    
+
+  * **Weights & Biases**
+  
+    <img src="https://drive.google.com/uc?export=view&id=1VdTXrUtR2ero3XCN1v4QLuCcw23KZFa5" width="300" height="50">
+    
+    > Weights & Biases is the MLOps platform for developers to build and monitor their model status.
+
+    1. You can simply install it by:
+    
+        ```bash
+        pip install wandb
+        ```
+    
+    2. Sign up an account in [W&B website](https://wandb.ai/site). 
+    
+    3. Test this code with your [API key](https://wandb.ai/authorize).
+    
+        ```python
+        wandb.login(anonymous="must", key='Your Key')
+        print("Successfully Logged In!")
+        ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-  * **Yahoo! Finance's API**
-    
-    > It's an open-source tool that uses Yahoo's publicly available APIs, and is intended for research and educational purposes.
-    
-    ```bash
-    pip install yfinance
-    ```
-    
-    Quick start to fatch stock data:
-    
-    ```python
-    import yfinance as yf
-    data = yf.download("SPY AAPL", start="2017-01-01", end="2017-04-30")
-    ```
-
 
 
 <!-- LICENSE -->
@@ -124,22 +148,39 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 ## References
-```bash
-@article{prophet,
-author = {Taylor SJ, Letham B.}
-title = {Forecasting at scale},
-journal = {PeerJ Preprints},
-year = {2017},
-doi = {https://doi.org/10.7287/peerj.preprints.3190v2},
+```txt
+@article{Zitnik2017,
+  title={Predicting multicellular function through multi-layer tissue networks},
+  author={Zitnik, Marinka and Leskovec, Jure},
+  journal={Bioinformatics},
+  volume={33},
+  number={14},
+  pages={190-198},
+  year={2017}
+}
+
+@inproceedings{Fey/Lenssen/2019,
+  title={Fast Graph Representation Learning with {PyTorch Geometric}},
+  author={Fey, Matthias and Lenssen, Jan E.},
+  booktitle={ICLR Workshop on Representation Learning on Graphs and Manifolds},
+  year={2019},
+}
+
+@article{kipf2016semi,
+  title={Semi-supervised classification with graph convolutional networks},
+  author={Kipf, Thomas N and Welling, Max},
+  journal={arXiv preprint arXiv:1609.02907},
+  year={2016}
 }
 ```
+
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 These resources are which I would like to give credit to.
-* [Time Series Forecasting With Prophet in Python](https://machinelearningmastery.com/time-series-forecasting-with-prophet-in-python/)
-* [Free Stock Data for Python Using Yahoo Finance API](https://towardsdatascience.com/free-stock-data-for-python-using-yahoo-finance-api-9dafd96cad2e)
+* [Graph Convolutional Networks](https://tkipf.github.io/graph-convolutional-networks/)
+* [Feature Learning in Multi-Layer Networks](http://snap.stanford.edu/ohmnet/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
